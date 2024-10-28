@@ -9,7 +9,7 @@ namespace konsola
 {
     public static class Methods
     {
-        static List<Music> musics = new List<Music>();
+        public static List<Music> musics = new List<Music>();
 
 
         /*********************************
@@ -47,9 +47,17 @@ namespace konsola
             }
         }
 
-        public static List<Music> DisplayData()
+        public static void DisplayData()
         {
-            
+            foreach (Music music in musics)
+            {
+                Console.WriteLine(music.artist);
+                Console.WriteLine(music.album);
+                Console.WriteLine(music.songsNumber);
+                Console.WriteLine(music.year);
+                Console.WriteLine(music.downloadNumber);
+                Console.WriteLine();
+            }
         }
     }
 }

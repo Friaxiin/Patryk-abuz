@@ -8,8 +8,7 @@
             string path = "Data.txt";
 
             Methods.GetData(path);
-
-            Console.WriteLine(Methods.DisplayData());
+            Methods.DisplayData();
         }
     }
 }
